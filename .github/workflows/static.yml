@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ركيزة | تمويلك.. ثبات لمستقبلك</title>
+  <!-- خط عربي مجاني من غوغل -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0f2c40;   /* أزرق غامق للشعار والعناوين */
+      --bg:#f9f9f8;      /* خلفية هادئة */
+      --radius:8px;
+    }
+    *{box-sizing:border-box;font-family:"Cairo",sans-serif;margin:0;padding:0}
+    body{background:var(--bg);color:#222;display:flex;min-height:100vh;align-items:center;justify-content:center}
+    .card{background:#fff;width:90%;max-width:480px;padding:40px 28px;border-radius:var(--radius);box-shadow:0 8px 24px rgba(0,0,0,.05)}
+    .logo{width:140px;margin:0 auto 20px;display:block}
+    h1{color:var(--brand);font-size:32px;font-weight:600;text-align:center;margin-bottom:10px}
+    h2{color:#555;font-size:17px;text-align:center;font-weight:400;margin-bottom:26px}
+    p.desc{line-height:1.8;font-size:15px;text-align:center;margin-bottom:26px}
+    .cta{display:block;width:100%;background:var(--brand);color:#fff;text-decoration:none;text-align:center;padding:14px 0;font-size:15px;border-radius:var(--radius);margin-bottom:32px;transition:.3s}
+    .cta:hover{opacity:.9}
+    form label{font-size:14px;display:block;margin-bottom:4px;font-weight:600}
+    form input,form textarea{
+      width:100%;padding:12px;border:1px solid #ccc;border-radius:var(--radius);font-size:14px;margin-bottom:18px
+    }
+    form textarea{resize:vertical;min-height:90px}
+    .submit{background:var(--brand);color:#fff;border:none;cursor:pointer;font-size:15px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- شعارك؛ عدّل src إذا كان الملف مختلفاً -->
+    <img src="logo.png" alt="شعار ركيزة" class="logo" />
+
+    <h1>ركيزة</h1>
+    <h2>تمويلك.. ثبات لمستقبلك</h2>
+
+    <p class="desc">
+      ركيزة جهة متخصصة في تقديم حلول تمويلية ذكية ومُيسّرة للأفراد والمنشآت،
+      نلتزم بتجربة سريعة وشفافة تعزّز ثقة عملائنا وتدعم نمو أعمالهم.
+    </p>
+
+    <!-- زر تواصل واتساب -->
+    <a href="https://wa.me/966555804792" class="cta" target="_blank" rel="noopener">
+      تحدث معنا عبر واتساب
+    </a>
+
+    <!-- نموذج الطلب -->
+    <form action="#" method="post">
+      <label for="name">اسم العميل</label>
+      <input id="name" name="name" type="text" placeholder="أدخل اسمك الكامل" required />
+
+      <label for="phone">رقم الجوال</label>
+      <input id="phone" name="phone" type="tel" placeholder="05xxxxxxxx" pattern="05[0-9]{8}" required />
+
+      <label for="service">وصف الخدمة المطلوبة</label>
+      <textarea id="service" name="service" placeholder="صف التمويل أو الخدمة التي تحتاجها بالتفصيل" required></textarea>
+
+      <input type="submit" value="إرسال الطلب" class="cta submit" />
+    </form>
+  </div>
+</body>
+</html>
